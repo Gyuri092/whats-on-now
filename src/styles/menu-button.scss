@@ -1,0 +1,12 @@
+@use 'colors' as *;
+
+.menu-button {
+  width: 85px;
+  height: 33px;
+  border-radius: 20px;
+  color: $dark-navy;
+  transition: border 0.5s ease-in-out;
+  &:hover {
+    border: 1px solid $light-sky-blue;
+  }
+}

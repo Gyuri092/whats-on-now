@@ -1,0 +1,9 @@
+@use 'colors' as *;
+
+.toggle-button {
+  width: 77px;
+  height: 33px;
+  border-radius: 20px;
+  border: 1px solid $light-gray;
+  background-color: $white;
+}
