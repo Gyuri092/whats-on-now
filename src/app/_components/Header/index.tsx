@@ -14,8 +14,8 @@ const Index = () => {
       <div className="menu-container">
         <MenuButton text="캘린더" />
         <MenuButton text="사용법" />
-        <ToggleButton feature="light-dark-mode" />
-        <ToggleButton feature="view-hide-comment" />
+        <ToggleButton feature="theme" />
+        <ToggleButton feature="comment" />
       </div>
     </div>
   );

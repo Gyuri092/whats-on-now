@@ -6,4 +6,16 @@
   border-radius: 20px;
   border: 1px solid $light-gray;
   background-color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6px;
+  margin-left: 20px;
+}
+
+.toggle-circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: $light-gray;
 }
