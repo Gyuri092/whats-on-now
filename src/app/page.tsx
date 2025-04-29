@@ -1,10 +1,11 @@
 import Header from '@/components/Header';
+import ThemeContainer from '@/components/ThemeContainer';
 
 const Home = () => {
   return (
-    <div className="root-page">
+    <ThemeContainer>
       <Header />
-    </div>
+    </ThemeContainer>
   );
 };
 

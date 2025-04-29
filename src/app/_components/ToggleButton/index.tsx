@@ -1,6 +1,7 @@
 'use client';
 import CommentIcon from '@/icons/comment.svg';
 import DarkModeIcon from '@/icons/darkmode.svg';
+import HideCommentInDarkModeIcon from '@/icons/hide-comment-darkmode.svg';
 import HideCommentIcon from '@/icons/hide-comment.svg';
 import LightModeIcon from '@/icons/lightmode.svg';
 import useCommentStore from '@/stores/commentStore';
@@ -39,7 +40,15 @@ const Index = ({ feature }: { feature: string }) => {
     if (feature === 'theme') {
       return themeState === 'dark' ? <DarkModeIcon /> : <LightModeIcon />;
     }
-    return commentState ? <HideCommentIcon /> : <CommentIcon />;
+    return commentState ? (
+      themeState === 'dark' ? (
+        <HideCommentInDarkModeIcon />
+      ) : (
+        <HideCommentIcon />
+      )
+    ) : (
+      <CommentIcon />
+    );
   };
 
   return (

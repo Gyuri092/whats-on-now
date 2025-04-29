@@ -10,3 +10,12 @@
   flex-direction: column;
   background-color: $white;
 }
+
+.dark {
+  background-color: $dark-gray;
+  color: $white;
+  button {
+    background-color: $dark-gray;
+    color: $white;
+  }
+}
