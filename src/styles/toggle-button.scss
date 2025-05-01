@@ -1,0 +1,49 @@
+@use 'colors' as *;
+
+.toggle-button {
+  width: 77px;
+  height: 33px;
+  border-radius: 20px;
+  border: 1px solid $light-gray;
+  background-color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6px;
+  margin-left: 20px;
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: $light-gray;
+    transition:
+      left 0.3s ease-in-out,
+      right 0.3s ease-in-out,
+      background-color 0.3s ease-in-out;
+  }
+
+  &.dark::before,
+  &.hide-comment::before {
+    right: calc(100% - 29px);
+    left: auto;
+  }
+}
+
+.toggle-button-icon {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  &.dark,
+  &.hide-comment {
+    justify-content: flex-end;
+    transition: justify-content 0.3s ease-in-out;
+  }
+}
