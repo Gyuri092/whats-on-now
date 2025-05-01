@@ -1,12 +1,7 @@
-import Header from '@/components/Header';
-import ThemeContainer from '@/components/ThemeContainer';
+import Container from '@/components/Container';
 
 const Home = () => {
-  return (
-    <ThemeContainer>
-      <Header />
-    </ThemeContainer>
-  );
+  return <Container />;
 };
 
 export default Home;
